@@ -15,6 +15,7 @@ class App extends Component {
     country.goldMedalCount++
     this.setState({country:country});
   }
+  //Subtracts the number of medals
   handleDecrement = (countryId, goldMedalCount) => {
     const country = this.state.countries.filter(c => c.id === countryId)[0];
 
